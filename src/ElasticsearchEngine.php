@@ -138,7 +138,7 @@ class ElasticsearchEngine extends Engine
             'body' => [
                 'query' => [
                     'bool' => [
-                        'must' => [['query_string' => [ 'query' => str_replace(' ','~ ',preg_replace('/\s+/', ' ',trim($builder->query))).'~']]]
+                        'must' => [['query_string' => [ 'query' => str_replace(' ','~ ',preg_replace('/\s+/', ' ',trim(preg_replace("/[^A-Za-z0-9 ]/", '', $builder->query)))).'~']]]
                     ]
                 ]
             ]
