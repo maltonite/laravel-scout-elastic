@@ -1,5 +1,5 @@
 {
-    "name": "maltonite/laravel-scout-elastic",
+    "name": "tamayo/laravel-scout-elastic",
     "description": "Elastic Driver for Laravel Scout",
     "keywords": ["laravel", "scout", "elasticsearch", "elastic"],
     "require": {
