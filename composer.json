@@ -11,7 +11,7 @@
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.0",
-        "jsq/amazon-es-php":"dev-master"
+        "jsq/amazon-es-php":"master"
     },
     "autoload": {
         "psr-4": {
