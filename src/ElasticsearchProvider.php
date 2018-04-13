@@ -16,12 +16,13 @@ class ElasticsearchProvider extends ServiceProvider
      */
     public function boot()
     {
+        $handler = '';
         if (App::environment('production', 'staging'))
         {
             $handler = new ElasticsearchPhpHandler(config('scout.elasticsearch.aws_loc'));
         }
         
-        app(EngineManager::class)->extend('elasticsearch', function($app) {
+        app(EngineManager::class)->extend('elasticsearch', function($app) use ($handler) {
             $eB = ElasticBuilder::create();
             if (App::environment('production', 'staging'))
             {
