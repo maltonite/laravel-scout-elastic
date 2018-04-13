@@ -6,6 +6,7 @@ use Laravel\Scout\EngineManager;
 use Illuminate\Support\ServiceProvider;
 use Elasticsearch\ClientBuilder as ElasticBuilder;
 use Aws\ElasticsearchService\ElasticsearchPhpHandler;
+use Illuminate\Support\Facades\App;
 
 
 class ElasticsearchProvider extends ServiceProvider
